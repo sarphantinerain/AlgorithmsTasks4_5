@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(AlgorithmsTasks4_5 LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+foreach(name task4_1 task4_2 task4_3 task4_4 task5_1 task5_2 task5_3 task5_4 task5_5)
+    add_executable(${name} src/${name}.cpp)
+endforeach()
